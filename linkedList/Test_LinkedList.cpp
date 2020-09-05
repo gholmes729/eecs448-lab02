@@ -191,10 +191,11 @@ bool Test_LinkedList::test7()
 	printTestMessage("size returns correct value after adds and removeBack");
 
 	//Mix of adding to the front, back and removing back
+	
 	for(int i = 0; i < TEST_SIZE; i++)
 	{
 		if(i%2 == 0)
-		{
+		{	
 			list.addBack(i);
 			trackedSize++;	
 		}
@@ -211,7 +212,8 @@ bool Test_LinkedList::test7()
 	}
 	
 	isPassed = list.size() == trackedSize;
-	printPassFail(isPassed);
+	printPassFail(isPassed);	
+	
 	return (isPassed); 
 }
 
