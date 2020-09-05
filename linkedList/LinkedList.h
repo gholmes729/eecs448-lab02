@@ -74,6 +74,12 @@ class LinkedList
 	*/	
 	bool removeFront();
 
+	/** @pre Not empty
+	*   @post Removes element
+	*   @return None
+	*/	
+	void remove(int index);
+
 	private:
 	Node<T>* m_front;
 	T m_size;
